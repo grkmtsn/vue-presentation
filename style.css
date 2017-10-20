@@ -1,0 +1,64 @@
+body{
+    background-image: url(/img/gaming-pattern.png);
+}
+#bag{
+    width: 200px;
+    height: 500px;
+    margin: 0 auto;
+    background: url(/img/bag.png) center no-repeat;
+    background-size: 80%;
+    position: relative;
+}
+#bag.burst{
+    background: url(/img/bag-burst.png) center no-repeat;
+    background-size: 80%;
+}
+#damage{
+    background:url(/img/punch.png) center no-repeat;
+    background-size: 150px;
+    position: absolute;
+    width: 150px;
+    height: 150px;
+}
+#damage span{
+    font-size: 34px;
+    transform: rotateZ(30deg);
+    position: absolute;
+    font-weight: bold;
+    top: 54px;
+    left: 51px;
+    font-family: monospace;
+    color: #310505;
+}
+#damage span:first-child{
+    left: 0px;
+    top: 27px;
+}
+#bag-health{
+    width: 200px;
+    border:2px solid #000;
+    margin: 0 auto 20px auto;
+}
+#bag-health div{
+    height: 20px;
+    background-color: crimson;
+    transition: all .3s ease;
+}
+#controls{
+    width: 200px;
+    margin: 0 auto;
+}
+#controls button{
+    border:none;
+    background-color: #333030;
+    cursor: pointer;
+    padding: 15px;
+    width: 98px;
+    color: #ccc;
+    border-radius: 3px;
+    transition: all .3s ease;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#controls button:hover{
+    background-color: rgb(88, 52, 52);
+}
