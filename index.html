@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Basic App</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav>
+        <div class="nav-wrapper">
+            <a href="#" class="brand-logo">
+                <img width="50" class="responsive-img" src="https://vuejs.org/images/logo.png" alt="">
+            </a>
+        </div>
+    </nav>
+    <div class="container" id="app">
+        <h4>This Page Title: {{title}}</h4>
+        <hr>
+        <div>
+            <span>v-bind Example</span><br>
+            <a v-bind:href="url" target="blank">Google</a>
+            <!--Shortcut ':'-->
+        </div>
+        <hr>
+        <div>
+            <span>v-on Example</span><br>
+            <button v-on:click="showAlert" class="waves-effect waves-light btn">Alert</button>
+            <button @click="showAlertWithParam('Welcome To')" class="waves-effect waves-light btn">Alert With Parameter</button>
+            <!--Shortcut '@'-->
+        </div>
+        <hr>
+        <div>
+            <span>Bind HTML Class</span><br>
+            <button @click="toggleImage" class="waves-effect waves-light btn">Show/Hide</button><br>
+            <img :class="{'flipOutX':flipOut,'flipInX':flipIn}" class="animated" width="145" src="https://vuejs.org/images/logo.png" alt="">
+        </div>
+        <hr>
+        <div>
+            <span>Loop Example</span><br>
+            <div class="collection">
+                <a href="#!" class="collection-item" :class="{active:item.isActive}" v-for="item in items">{{item.name}}</a>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>

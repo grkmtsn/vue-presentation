@@ -1,0 +1,10 @@
+.nav-wrapper {
+    padding-left: 15px;
+    background-color: #223141;
+}
+.nav-wrapper a{
+    width: 50px;
+}
+.nav-wrapper a img{
+    vertical-align: middle;
+}
